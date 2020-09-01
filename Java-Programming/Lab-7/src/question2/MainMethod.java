@@ -23,7 +23,7 @@ class MobileNumberParser{
 public class MainMethod {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter your mobile number :\t");
+        System.out.print("Enter your mobile number :\t");
         String mobileNumber = sc.next();
         try{
            MobileNumberParser.parseMobileNumber(mobileNumber);
@@ -32,7 +32,7 @@ public class MainMethod {
         }
         catch (InvalidNumberOfDigitsException e11){
             System.out.println("Invalid no. of digits. \nEnter a Valid Mobile Number!!");
-            System.out.println("Re-enter your mobile Number :\t");
+            System.out.print("Re-enter your mobile Number :\t");
             mobileNumber = sc.next();
             try{
                 MobileNumberParser.parseMobileNumber(mobileNumber);
@@ -47,7 +47,7 @@ public class MainMethod {
         }
         catch (InvalidDataFormatException e12){
             System.out.println("Invalid data format. \nEnter a Valid Mobile Number!!");
-            System.out.println("Re-enter your mobile Number :\t");
+            System.out.print("Re-enter your mobile Number :\t");
             mobileNumber = sc.next();
             try{
                 MobileNumberParser.parseMobileNumber(mobileNumber);
